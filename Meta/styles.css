@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 3%;
+}
+
+.right {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+.logo {
+    width: 6rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.sup {
+    padding: 1px 1.5rem;
+    border-right: 2px solid rgba(0, 0, 0, 0.267);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.imacon {
+    width: 30px;
+    height: auto;
+}
+
+
+.hero-one {
+    width: 100vw;
+    height: 180vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    /* margin: 2rem 13%; */
+    gap: 4rem;
+}
+
+.foto1 {
+    width: 71rem;
+}
+
+.hh {
+    font-size: 3rem;
+}
+.ht {
+    font-size: 1.5rem;
+}
+
+.sl {
+    width: 200px;
+}
+
+.secondtext {
+    font-size: 2.7rem;
+}
+
+.hero-two {
+    text-align: center;
+    width: 100%;
+    height: 150vh;
+    background: url(img/two.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15rem;
+    align-items: center;
+}
+
+.down {
+    padding-bottom: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem
+    
+}
+.text1 {
+    font-size: 1.7rem;
+}
+
+
+.mill {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.tmill {
+    font-size: 1.6rem;
+}
