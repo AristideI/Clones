@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career</title>
+    <title>Courses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap"
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="text-[poppins]">
+<body class="text-[poppins] bg-slate-100 bg-opacity-80">
     <header class="px-[12%] py-4 text-mainBlue flex justify-between items-center font-[600]">
         <div class="w-20 h-4"></div>
         <ul class="flex justify-center items-center gap-8">
@@ -26,6 +26,97 @@
             class="bg-mainBlue text-white px-12 py-2 rounded-2xl hover:bg-mainBlue hover:bg-opacity-90">Login</button>
 
     </header>
+
+    <main>
+        <article class="flex justify-between items-center gap-12 px-[12%] py-8">
+            <section class="flex flex-col gap-6">
+                <form class="flex gap-8" action="" method="get">
+                    <input class="w-4/6 border-2 rounded-xl py-1 px-3" type="text" placeholder="Search">
+                    <button
+                        class="w-1/6 flex bg-orangemain justify-center items-center gap-2 py-1 text-white font-bold rounded-xl"
+                        type="submit">
+                        <img class="w-4" src="../img/loupe (1).png" alt="Search icon">
+                        <p>Search</p>
+                    </button>
+                </form>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, porro! Aperiam vel molestias veniam
+                    excepturi inventore dolorum</p>
+            </section>
+            <img src="../img/Main.png" alt="search photo">
+        </article>
+
+        <article class="bg-white px-[12%] py-12 flex flex-col justify-between items-center gap-8">
+            <p class="text-mainBlue text-3xl font-bold">Explore a range of courses</p>
+            <section class="flex justify-between">
+                <div class="w-1/5">
+                    <img class="w-full h-36 object-cover" src="../img/courseOne.png" alt="">
+                    <p class="font-medium">Full Communication Crash Course</p>
+                    <p>John Doe</p>
+                    <div class="flex gap-4">
+                        <p>4.7</p>
+                        <img src="../img/star.png" alt="">
+                    </div>
+                    <p class="font-bold">30$</p>
+                </div>
+                <div class="w-1/5">
+                    <img class="w-full h-36 object-cover" src="../img/courseTwo.png" alt="">
+                    <p class="font-medium">Python Programming from 0 to hero</p>
+                    <p>John Doe</p>
+                    <div class="flex gap-4">
+                        <p>4.7</p>
+                        <img src="../img/star.png" alt="">
+                    </div>
+                    <p class="font-bold">30$</p>
+                </div>
+                <div class="w-1/5">
+                    <img class="w-full h-36 object-cover" src="../img/CourseThree.png" alt="">
+                    <p class="font-medium">Project Management</p>
+                    <p>John Doe</p>
+                    <div class="flex gap-4">
+                        <p>4.7</p>
+                        <img src="../img/star.png" alt="">
+                    </div>
+                    <p class="font-bold">30$</p>
+                </div>
+                <div class="w-1/5">
+                    <img class="w-full h-36 object-cover" src="../img/courseFour.jpg" alt="">
+                    <p class="font-medium">Full Architecture Course</p>
+                    <p>John Doe</p>
+                    <div class="flex gap-4">
+                        <p>4.7</p>
+                        <img src="../img/star.png" alt="">
+                    </div>
+                    <p class="font-bold">30$</p>
+                </div>
+            </section>
+            <section class="flex gap-20">
+                <img class="w-8" src="../img/arrow-right 2.png" alt="">
+                <img class="w-8" src="../img/arrow-right 1.png" alt="">
+            </section>
+        </article>
+
+        <article class="mx-[12%] flex flex-col justify-between items-center py-12 gap-8">
+            <p class="text-3xl font-bold text-mainBlue">Top Categories</p>
+            <section class="flex justify-between">
+                <div class="w-1/5 flex flex-col items-center">
+                    <img src="../img/comm.png" alt="Communication">
+                    <p class="font-medium">Communication</p>
+                </div>
+                <div class="w-1/5 flex flex-col items-center">
+                    <img src="../img/Tech.png" alt="Communication">
+                    <p class="font-medium">Technology</p>
+                </div>
+                <div class="w-1/5 flex flex-col items-center">
+                    <img src="../img/project.png" alt="Communication">
+                    <p class="font-medium">Project Management</p>
+                </div>
+                <div class="w-1/5 flex flex-col items-center">
+                    <img src="../img/archi.png" alt="Communication">
+                    <p class="font-medium">Architecture</p>
+                </div>
+            </section>
+        </article>
+    </main>
 
     <footer class="bg-mainBlue text-white px-[12%] pt-12">
         <section class="flex justify-between items-start">
