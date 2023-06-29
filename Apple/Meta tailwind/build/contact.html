@@ -13,9 +13,11 @@
 </head>
 
 <body class="text-[poppins] bg-slate-100 bg-opacity-60">
-    <header class="px-[12%] py-4 text-mainBlue flex justify-between items-center font-[600]">
+
+    <header
+        class="px-[12%] md:px-[9%] py-4 md:py-3 w-full text-mainBlue flex justify-between items-center font-[600] md:justify-end md:gap-4">
         <div class="w-20 h-4"></div>
-        <ul class="flex justify-center items-center gap-8">
+        <ul class="flex justify-center items-center gap-8 md:hidden">
             <li><a class="hover:underline" href=" index.html">Home</a></li>
             <li><a class="hover:underline" href="courses.html">Courses</a></li>
             <li><a class="hover:underline" href="career.html">Career</a></li>
@@ -23,8 +25,9 @@
             <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
         </ul>
         <button
-            class="bg-mainBlue text-white px-12 py-2 rounded-2xl hover:bg-mainBlue hover:bg-opacity-90">Login</button>
+            class="bg-mainBlue text-white px-12 py-2 md:font-medium sm:hidden md:px-8 md:py-1 rounded-2xl hover:bg-mainBlue hover:bg-opacity-90">Login</button>
 
+        <img class="hidden md:block w-8 sm:w-6" src="../img/menu (2).png" alt="">
     </header>
 
     <main>
@@ -39,31 +42,33 @@
         <article class="px-[12%] bg-white">
             <form class="w-full" action="submit" method="post">
                 <section class="flex flex-wrap">
-                    <div class="w-1/2 flex flex-col gap-2 pt-8">
+                    <div class="w-1/2 md:w-full flex flex-col gap-2 pt-8">
                         <label class="font-medium text-xl" for="name">Name</label>
-                        <input class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" id="name" type="text"
+                        <input class="bg-slate-100 bg-opacity-80 w-4/5 md:w-full border-2 p-2" id="name" type="text"
                             placeholder="Write your Name">
                     </div>
-                    <div class="w-1/2 flex flex-col gap-2 pt-8">
+                    <div class="w-1/2 md:w-full flex flex-col gap-2 pt-8">
                         <label class="font-medium text-xl" for="email">Email</label>
-                        <input class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" id="email" type="email"
+                        <input class="bg-slate-100 bg-opacity-80 w-4/5 md:w-full border-2 p-2" id="email" type="email"
                             placeholder="Write your Name">
                     </div>
-                    <div class="w-1/2 flex flex-col gap-2 pt-8">
+                    <div class="w-1/2 md:w-full flex flex-col gap-2 pt-8">
                         <label class="font-medium text-xl" for="interest">What services are you interested in?</label>
                         <!-- <input class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" id="name" type=""
                             placeholder="Write your Name"> -->
-                        <select class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" name="choice" id="interest">
+                        <select class="bg-slate-100 bg-opacity-80 w-4/5 md:w-full border-2 p-2" name="choice"
+                            id="interest">
                             <option value="learning">Learning</option>
                             <option value="internship">Internship</option>
                             <option value="career">Career guidance</option>
                         </select>
                     </div>
-                    <div class="w-1/2 flex flex-col gap-2 pt-8">
+                    <div class="w-1/2 md:w-full flex flex-col gap-2 pt-8">
                         <label class="font-medium text-xl" for="location">Location</label>
                         <!-- <input class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" id="name" type=""
                             placeholder="Write your Name"> -->
-                        <select class="bg-slate-100 bg-opacity-80 w-4/5 border-2 p-2" name="choice" id="location">
+                        <select class="bg-slate-100 bg-opacity-80 w-4/5 md:w-full border-2 p-2" name="choice"
+                            id="location">
                             <option value="kigali">Kigali</option>
                             <option value="Musanze">Musanze</option>
                             <option value="Huye">Huye</option>
@@ -73,8 +78,8 @@
                 </section>
                 <div class="flex flex-col gap-2 pt-8">
                     <label class="text-xl font-medium" for="message">Message</label>
-                    <textarea class="bg-slate-100 bg-opacity-80 w-11/12 border-2 " name="message" id="message" cols="30"
-                        rows="10"></textarea>
+                    <textarea class="bg-slate-100 bg-opacity-80 w-11/12 md:w-full border-2 " name="message" id="message"
+                        cols="30" rows="10"></textarea>
                 </div>
                 <button class="bg-mainBlue mx-auto my-12 px-12 py-2 text-white font-bold rounded-xl"
                     type="submit">Submit</button>
@@ -82,14 +87,14 @@
         </article>
 
         <article class="flex justify-between mx-[12%] items-center py-12">
-            <img src="../img/52 1.png" alt="">
-            <section class="w-3/5 flex flex-col items-start gap-3">
+            <img class="md:hidden" src="../img/52 1.png" alt="">
+            <section class="w-3/5 md:w-full flex flex-col items-start gap-3">
                 <p class="font-medium text-xl text-mainBlue">Join Our Newsletter</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis sapiente quisquam, optio
                     cupiditate numquam ullam</p>
                 <form class="w-full flex gap-8">
                     <input class="w-3/5 border-2 rounded-xl" type="text" id="subscribe">
-                    <button class="w-1/5 bg-orangemain px-8 py-1 rounded-xl" type="submit">Subscribe</button>
+                    <button class="w-2/5 md:w-2/5 bg-orangemain px-8 py-1 rounded-xl" type="submit">Subscribe</button>
                 </form>
                 <p class="">We care about your data privacy</p>
             </section>

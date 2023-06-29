@@ -13,9 +13,11 @@
 </head>
 
 <body class="text-[poppins]">
-    <header class="px-[12%] py-4 text-mainBlue flex justify-between items-center font-[600]">
+
+    <header
+        class="px-[12%] md:px-[9%] py-4 md:py-3 w-full text-mainBlue flex justify-between items-center font-[600] md:justify-end md:gap-4">
         <div class="w-20 h-4"></div>
-        <ul class="flex justify-center items-center gap-8">
+        <ul class="flex justify-center items-center gap-8 md:hidden">
             <li><a class="hover:underline" href=" index.html">Home</a></li>
             <li><a class="hover:underline" href="courses.html">Courses</a></li>
             <li><a class="hover:underline" href="career.html">Career</a></li>
@@ -23,13 +25,14 @@
             <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
         </ul>
         <button
-            class="bg-mainBlue text-white px-12 py-2 rounded-2xl hover:bg-mainBlue hover:bg-opacity-90">Login</button>
+            class="bg-mainBlue text-white px-12 py-2 md:font-medium sm:hidden md:px-8 md:py-1 rounded-2xl hover:bg-mainBlue hover:bg-opacity-90">Login</button>
 
+        <img class="hidden md:block w-8 sm:w-6" src="../img/menu (2).png" alt="">
     </header>
 
-    <main>
-        <article class="h-[70rem] mx-[12%] relative my-20">
-            <section class="w-[60%] flex flex-col items-start gap-8">
+    <main class="relative md:h-[90rem]">
+        <article class="h-[70rem] mx-[12%] md:relative my-20 md:py-96">
+            <section class="w-[60%] flex flex-col items-start gap-8 md:w-full">
                 <p class="text-mainBlue text-3xl font-bold">Mutware Educate</p>
                 <section class="border-2 p-8">
                     <div class="flex items-center gap-8">
@@ -52,7 +55,6 @@
                     <input class="border-2 w-full mt-8 h-8 px-4" type="text" placeholder="Write a comment">
                 </section>
                 <section class=" flex flex-col items-start gap-8">
-                    <p class="text-mainBlue text-3xl font-bold">Mutware Educate</p>
                     <section class="border-2 p-8">
                         <div class="flex items-center gap-8 mb-4">
                             <div class="w-16 h-16 rounded-full bg-orange-400 grid place-content-center">
@@ -76,7 +78,8 @@
 
                 </section>
 
-                <section class="w-[27%] fixed right-[12%] top-36 flex flex-col gap-8">
+                <section
+                    class="w-[27%] fixed right-[12%] top-36 flex flex-col gap-8 md:w-full md:absolute md:top-0 md:left-0 md:right-0 h-40">
                     <button class="text-white bg-mainBlue font-medium py-1 pb-2 px-8 rounded-lg">New Thread <span
                             class="font-extrabold text-xl">+</span></button>
 
